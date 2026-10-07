@@ -1,0 +1,15 @@
+{
+  "name": "leaderboard-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "deploy": "wrangler deploy",
+    "login": "wrangler login",
+    "kv:create": "wrangler kv:namespace create VIDEOS",
+    "d1:create": "wrangler d1 create leaderboard_public"
+  },
+  "devDependencies": {
+    "wrangler": "^3.104.0"
+  }
+}
